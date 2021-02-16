@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 400;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        background-color: #f5f5f5;
     }
   
     code {
@@ -15,17 +16,33 @@ export const GlobalStyle = createGlobalStyle`
     }
   
 `
-
-export const Container = styled.div`
+export const Parent = styled.div`
     display: flex;
-    flex-direction: ${props => props.direction || "row"};
-    background-color: yellow;
+    flex-direction: ${props => props.flexDirection || "row"};
 `
 
-export const CenteredDiv = styled.div`
-    text-align: center;
-    background-color: yellow;
-`
 export const Header = styled.header`
-    width: 100%
+    position: fixed;
+    width: 100%;
+    display: flex;
+    height: 65px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+`
+
+export const HeaderContent = styled.div`
+
+`
+
+export const Main = styled.main`
+    width: 100px;
+    height: 100px;
+    margin: auto;
+`
+
+export const Card = styled.div`
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 32px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 12%);
 `

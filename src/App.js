@@ -1,17 +1,23 @@
-import { Container } from './styled-components'
+import { 
+  Parent,
+  Header,
+  Main,
+  Card, 
+} from './styled-components'
 
 export const App = () => {
   return (
-    <Container direction="column">
-      <div>
-        teste
-      </div>
-      <div>
-        teste2
-      </div>
-      <div>
-        teste3
-      </div>
-    </Container>
+    <Parent flexDirection="column">
+      <Header>
+        <a href="/">
+          Logo
+        </a>
+      </Header>
+      <Main>
+        <Card>
+          Olá teste
+        </Card>
+      </Main>
+    </Parent>
   );
 }
