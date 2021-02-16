@@ -1,19 +1,17 @@
-import { CenteredDiv, FlexContainer } from './components/styled-components'
+import { Container } from './styled-components'
 
-const App = () => {
+export const App = () => {
   return (
-    <FlexContainer direction="column">
+    <Container direction="column">
       <div>
-        ola1
+        teste
       </div>
       <div>
-        ola2
+        teste2
       </div>
       <div>
-        ola3
+        teste3
       </div>
-    </FlexContainer>
+    </Container>
   );
 }
-
-export default App;
